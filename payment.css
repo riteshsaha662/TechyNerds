@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(coursesback.jpg);
+    background-size: cover;
+}
+nav{
+    display: flex;
+    padding: 1% 4%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
+    background-color: rgb(186, 135, 64);
+    box-shadow: .2rem .2rem 1rem black;
+}
+.logo{
+    color: black;
+    font-size: 3rem;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: .8rem 2rem;
+    position: relative;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.7rem;
+    transition: .1s;
+}
+.nav-links ul li a:hover{
+    font-size: 1.9rem;
+    color:rgb(122, 23, 23);
+    text-decoration-line: underline;
+}
+.container{
+    box-sizing: border-box;
+    outline: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+}
+.container form{
+    padding: 2rem;
+    width:70rem;
+    background: white;
+    box-shadow: 0 .7rem 1rem rgba(0,0,0,0.5);
+}
+.container form .row{
+    display: flex;
+    flex: wrap;
+    gap:1.5rem;
+}
+.container form .row .col{
+    flex: 1 1 25rem;
+
+}
+.container form .row .col .Title{
+    font-size: 2rem;
+    color: black;
+    text-transform: uppercase;
+}
+.container form .row .col .input-box{
+    margin: 1.5rem 0; 
+}
+.container form .row .col .input-box label{
+    margin-bottom: .5rem;
+    display: block;
+    font-size: 2rem;
+}
+.calender{
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+.container form .row .col .input-box input{
+    width:100%;
+    border:.1rem solid grey;
+}
+.container form .row .col .input-box input:focus{
+    border: .1rem solid black;
+}
+.container form .row .col .flex{
+    display: flex;
+    gap: 1.5rem;
+}
+.container form .row .col .input-box img{
+    height: 3.4rem;
+    margin-top: .5rem;
+    filter: drop-shadow(0 0 .1rem black)
+}
+.container form .submit-btn{
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.7rem;
+    background-color: rgb(186, 135, 64);
+    margin-top: .5rem;
+    cursor: pointer;
+    border: none;
+}
+.container form .submit-btn:hover{
+    background-color: rgb(84, 54, 13);
+    color: white;
+}

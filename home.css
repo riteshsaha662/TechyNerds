@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(students.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7rem;
+    background-color: rgb(186, 135, 64);
+    box-shadow: .2rem .2rem 1rem black;
+}
+nav .navbar{
+    max-width: 125rem;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .navbar .logo a{
+    color: white;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+nav .navbar .navlinks{
+    height: 100%;
+    line-height: 7rem;
+}
+nav .navbar .navlinks .links{
+    display: flex;
+}
+nav .navbar .navlinks .links li{
+    position: relative;
+    align-items: center;
+    padding: 0 1.4rem;
+    list-style: none;
+}
+nav .navbar .navlinks .links li a{
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+    font-size: 2rem;
+}
+nav .navbar .navlinks .links li a:hover{
+    color:rgb(117, 54, 12)
+}
+nav .navbar .navlinks .links li .arrow{
+    height:100%;
+    line-height: 7rem;
+    width: 2.2rem;
+    text-align: center;
+    color: white;
+    transition: all 0.3s ease
+}
+.navbar .navlinks .links li:hover .accountclass-arrow{
+    transform: rotate(180deg);
+}
+.navbar .navlinks .links .sub-menu{
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    background: black;
+    line-height: 4rem;
+    border-radius: 0 0 .5rem .5rem;
+    box-shadow: 0 .1rem .2rem rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 90;
+}
+.navbar .navlinks .links .sub-menu li{
+    padding: 0 2.2rem;
+    border-bottom: .1rem solid rgba(255, 255, 255, 0.1);
+}
+.navbar .navlinks .links .sub-menu li a{
+    font-size:1.5rem;
+    font: 500;
+}
+.navbar .navlinks .links li:hover .account-sub-menu{
+    display: block;
+}
+.navbar .search-box{
+    position:relative;
+    height:4rem;
+    width: 4rem;
+}
+.navbar .search-box .bx-search{
+    color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height:4rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+/* .navbar .search-box .input-box{
+    height: 6rem;
+    width: 30rem;
+    background: #3e8da8;
+    position: absolute;
+    top: 6.5rem;
+    right: calc(100% - 4rem);
+    border-radius: .6rem;
+    
+}
+.navbar .search-box .input-box::before{
+    content:'';
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    background: #3e8da8;
+    right:1rem;
+    top:-.6rem;
+    transform: rotate(45deg);
+}
+.navbar .search-box .input-box input{
+    position: absolute;
+    height: 3.5rem;
+    width: 28rem;
+    z-index: 98;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    border: none;
+    border-radius: .4rem;
+    padding: 0 1.5rem;
+    font-size: 1.6rem;
+} */
+.conainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: transparent;
+    margin: auto;
+    width: 95%;
+    border-radius: .4rem;
+    margin-top: 7rem;
+}
+.card{
+    background-color: rgb(250, 225, 225);
+    width: 32rem;
+    margin: 1rem;
+    border-radius: .7rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.275) 0px 10px 10px;
+}
+.card-image{
+    height:37rem;
+    background-size: cover;
+    border-radius: .7rem .7rem 0 0;
+}
+.back1{
+    background-image: url(events.jpg);
+    opacity: .6;
+}
+.back2{
+    background-image: url(courses.png);
+    opacity: .6;
+}
+.back3{
+    background-image: url(codingmerch.jpg);
+    opacity: .6;
+}
+.back4{
+    background-image: url(soundtrap.jpg);
+    opacity: .6;
+}
+.card a{
+    background-color: rgb(134, 50, 50);
+    color: white;
+    font-size: 2.7rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    text-align: center;
+    margin: 2rem 5rem;
+    text-decoration: none;
+    border-radius: .5rem;
+}
+.card:hover{
+    background-color: rgb(62,62,62);
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+.card a:hover{
+    border: .3rem solid white;
+    background-color:transparent;
+    transition: all 1s ease;
+}

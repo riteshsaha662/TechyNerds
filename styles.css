@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size:62.5%
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(students.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 1% 4%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
+    background-color: rgb(186, 135, 64);
+    box-shadow: .2rem .2rem 1rem black;
+}
+.logo{
+    color: white;
+    font-size: 4rem;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: .8rem 2rem;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.7rem;
+    transition: .1s;
+}
+.nav-links ul li a button{
+    background-color: transparent;
+    color: white;
+    border: .1rem solid white;
+    padding: 3%;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s;
+}
+.nav-links ul li a button:hover{
+    border: .2rem solid rgb(117, 54, 12);
+    color:rgb(117, 54, 12);
+}
+.nav-links ul li a:hover{
+    font-size: 1.9rem;
+    color:rgb(117, 54, 12);
+    text-decoration-line: underline;
+}
+.conainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: transparent;
+    margin: auto;
+    width: 95%;
+    border-radius: .4rem;
+}
+.card{
+    background-color: rgb(250, 225, 225);
+    width: 32rem;
+    margin: 1rem;
+    border-radius: .7rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.275) 0px 10px 10px;
+}
+.card-image{
+    height:37rem;
+    background-size: cover;
+    border-radius: .7rem .7rem 0 0;
+}
+.back1{
+    background-image: url(events.jpg);
+    opacity: .6;
+}
+.back2{
+    background-image: url(courses.png);
+    opacity: .6;
+}
+.back3{
+    background-image: url(codingmerch.jpg);
+    opacity: .6;
+}
+.back4{
+    background-image: url(soundtrap.jpg);
+    opacity: .6;
+}
+.card a{
+    background-color: rgb(134, 50, 50);
+    color: white;
+    font-size: 2.7rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    text-align: center;
+    margin: 2rem 5rem;
+    text-decoration: none;
+    border-radius: .5rem;
+}
+.card:hover{
+    background-color: rgb(62,62,62);
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+.card a:hover{
+    border: .3rem solid white;
+    background-color:transparent;
+    transition: all 1s ease;
+}
